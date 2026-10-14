@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>SPARK</title>
+        <link href="css/intro.css" rel="stylesheet" type="text/css">
+        <link href="img/symbol 1.png" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+        <!--인트로 화면-->
+        <main class="intro">
+            <!--배경의 은은한 빛-->
+            <div class="intro-light"></div>
+            <!--클릭 가능한 이미지 버튼-->
+            <button type="button" class="logo-button" id="logoButton" aria-label="SPARK 전시 입장">
+                <img src="img/symbol 1.png" alt="SPARK 전시 입장" class="logo-image">
+            </button>
+            <!--안내 문구-->
+            <p class="click-guide" id="clickGuide">
+                CLICK TO ENTER
+            </p>
+            <!--스파크와 빛 효과가 생성되는 공간-->
+            <div class="effect-container" id="effectContainer" aria-hidden="true"></div>
+        </main>
+
+        <script src="js/intro.js"></script>
+    </body>
+</html>

@@ -287,7 +287,7 @@ header:has(.menu.active) {
 .lead-2,
 .lead-3,
 .lead-4 {
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 20px;
 }
 
@@ -358,7 +358,7 @@ header:has(.menu.active) {
     margin-bottom: 15px;
 }
 .visual-lead {
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 15px;
 }
 .color-box {
@@ -577,7 +577,7 @@ footer {
 }
 .footer-middle {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #EB2254;
     margin-bottom: 20px;
 }
@@ -596,17 +596,17 @@ footer {
 }
 .copy {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 10px;
 }
 .copy-KR {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 5px;
 }
 .copy-EN {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 @media (prefers-reduced-motion: reduce) {

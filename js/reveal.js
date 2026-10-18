@@ -16,5 +16,6 @@ document.querySelectorAll(
     '.visual > h2, .visual > h1, .visual-text > h3, .visual-lead, ' +
     '.poster-frame, .color-box, ' +
     '.location > h2, .location > h1, .map, .information > div, ' +
-    '.mockup-list, .mockup'
+    '.e-main-images, .e-information h1, .name-box, .e-title .text, ' +
+    '.mockup-list .mockup' 
 ).forEach(el => io.observe(el));

@@ -178,12 +178,15 @@ header {
     min-width: 0;
     overflow: hidden;
     background-color: #eee;
+    border-radius: 12px;
 }
 .e-main-images img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
+    transform: scale(1.08);
+    transition: transform 0.9s ease;
 }
 .e-information {
     flex: 1 1 0;
@@ -194,7 +197,23 @@ header {
 }
 .e-information h1 {
     font-size: 25px;
-    color: #EB2254;
+    position: relative;
+    padding-bottom: 12px;
+}
+.e-information h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #EB2254;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s 0.3s ease;
+}
+.e-information h1.show::after {
+    transform: scaleX(1);
 }
 .name-box {
     width: 100%;
@@ -213,6 +232,26 @@ header {
 .text {
     font-size: 13px;
 }
+.e-main-images,
+.e-information h1,
+.name-box,
+.e-title .text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: var(--delay, 0s);
+}
+.e-main-images.show,
+.e-information h1.show,
+.name-box.show,
+.e-title .text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.e-main-images.show img {
+    transform: scale(1);
+}
+
 
 .mockup-list {
     width: 100%;
@@ -244,7 +283,7 @@ header {
     border-radius: 12px;
     background-color: #eee;
 }
-mockup img {
+.mockup img {
     transition: transform 0.5s ease;
 }
 .mockup:hover img,
@@ -312,5 +351,12 @@ footer {
         animation: none !important;
         transition: none !important;
     }
-    .menu a, .mockup { opacity: 1; transform: none; }
+    .menu a,
+    .mockup,
+    .e-main-images,
+    .e-information h1,
+    .name-box,
+    .e-title .text { opacity: 1; transform: none; }
+    .e-main-images img { transform: none; }
+    .e-information h1::after {transform: scaleX(1);}
 }

@@ -173,6 +173,64 @@ header {
     font-size: 14px;
     animation: fadeUp 0.7s 0.45s ease both;
 }
+
+.work-list{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.work-item {
+    width: calc((100% - 20px) / 2);
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: var(--delay, 0s);
+}
+.work-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.work-item a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #eee;
+}
+.work-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.work-item a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #EB2254;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+.work-item a:hover img,
+.work-item a:active img {
+    transform: scale(1.05);
+}
+.work-item a:hover::after,
+.work-item a:active::after {
+    opacity: 0.25;
+}
+.work-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 /* 푸터 */
 footer {
     width: 100%;
@@ -234,5 +292,10 @@ footer {
         animation: none !important;
         transition: none !important;
     }
-    .menu a, .work-list .i-item { opacity: 1; transform: none;}
+    .menu a, .work-list { opacity: 1; transform: none;}
+}
+
+@media (min-width: 768px) {
+    .work-list { padding: 20px 40px; }
+    .work-item { width: calc((100% - 40px) / 3); }
 }

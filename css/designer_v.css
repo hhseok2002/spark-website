@@ -175,6 +175,9 @@ section.show {
     font-size: 22px;
     color: #EB2254;
 }
+.ad-title {
+    font-size: 31px;
+}
 .poster-images {
     margin-top: 20px;
     overflow: hidden;
@@ -188,6 +191,10 @@ section.show {
     display: block;
     transform: scale(1.06);
     transition: transform 0.8s ease;
+}
+.images-box {
+    border-radius: 12px;
+    border: 0.25px solid #D9D9D9;
 }
 section.show .poster-images img {
     transform: scale(1);

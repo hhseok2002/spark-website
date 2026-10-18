@@ -192,10 +192,10 @@ header {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 .artwork {
-    width: calc((100% - 20px) / 2);
+    width: calc((100% - 20px) / 3);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
@@ -250,7 +250,7 @@ footer {
 }
 .footer-middle {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #EB2254;
     margin-bottom: 20px;
 }
@@ -269,17 +269,17 @@ footer {
 }
 .copy {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 10px;
 }
 .copy-KR {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 5px;
 }
 .copy-EN {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 @media (prefers-reduced-motion: reduce) {

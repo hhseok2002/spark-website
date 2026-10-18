@@ -287,7 +287,7 @@ header:has(.menu.active) {
 .lead-2,
 .lead-3,
 .lead-4 {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
@@ -358,7 +358,7 @@ header:has(.menu.active) {
     margin-bottom: 15px;
 }
 .visual-lead {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 15px;
 }
 .color-box {
@@ -392,13 +392,13 @@ header:has(.menu.active) {
 .HEX-code {
     position: absolute;
     font-size: 11px;
-    color: #DEDEDE;
+    color: white;
     bottom: 25px;
 }
 .RGB {
     position: absolute;
     font-size: 11px;
-    color: #DEDEDE;
+    color: white;
     bottom: 7px;
 }
 

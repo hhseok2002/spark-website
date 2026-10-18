@@ -152,7 +152,7 @@ header {
     background-color: #EB2254;
     color: white;
 }
-.visual {
+.editorial {
     background-color: #EB2254;
     color: white;
     border: none;
@@ -161,10 +161,17 @@ header {
 .e-title {
     width: 100%;
     height: auto;
-    display: flex;
+    display: block;
     align-items: flex-start;
     padding: 20px;
+}
+.e-title-box {
+    width: 100%;
+    height: auto;
+    display: flex;
     gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
 }
 .e-main-images {
     flex: 1 1 0;
@@ -181,7 +188,7 @@ header {
 .e-information {
     flex: 1 1 0;
     min-width: 0;
-    margin-top: 40px;
+    margin-top: 20px;
 
     height: auto;
 }
@@ -193,7 +200,7 @@ header {
     width: 100%;
     align-items: flex-start;
     gap: 10px;
-    display: flex;
+    display: block;
     margin-bottom: 20px;
 }
 .name-box h2 {
@@ -203,8 +210,8 @@ header {
 .name-box p{
     font-size: 18px;
 }
-.e-information p {
-    font-size: 14px;
+.text {
+    font-size: 13px;
 }
 
 .mockup-list {
@@ -281,24 +288,23 @@ footer {
 .Univ-name-EN {
     font-size: 15px;
     color: #4b4b4b;
-    margin-bottom: 5px;
 }
 .footer-bottom {
     width: 100%;
 }
 .copy {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 10px;
 }
 .copy-KR {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 5px;
 }
 .copy-EN {
     color: #4b4b4b;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 @media (prefers-reduced-motion: reduce) {

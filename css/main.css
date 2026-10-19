@@ -306,6 +306,7 @@ header {
     margin-bottom: 20px;
 }
 .poster {
+    width: 100%;
     overflow: hidden;
     background-color: #eee;    
 }

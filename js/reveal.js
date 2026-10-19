@@ -17,5 +17,6 @@ document.querySelectorAll(
     '.poster-frame, .color-box, ' +
     '.location > h2, .location > h1, .map, .information > div, ' +
     '.e-main-images, .e-information h1, .name-box, .e-title .text, ' +
-    '.mockup-list .mockup' 
+    '.mockup-list .mockup, ' +
+    '.keywords li' 
 ).forEach(el => io.observe(el));

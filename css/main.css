@@ -261,6 +261,7 @@ header {
     list-style: none;
     padding: 0 20px;
     margin: 10px 0;
+    margin-bottom: 50px;
 }
 .keywords li {
     font-size: 8px;
@@ -278,6 +279,120 @@ header {
 .kw-black { color: #111; }
 .kw-blue { color: #87C0F0; }
 .kw-pink { color: #EB2254; }
+
+/* 개요 */
+.overview {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+.overview h2 {
+    font-size: 20px;
+    color: #787878;
+}
+.overview h1 {
+    font-size: 28px;
+    color: #EB2254;
+    margin-bottom: 20px;
+}
+.poster-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.poster {
+    overflow: hidden;
+    background-color: #eee;    
+}
+.poster img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.overview-text {
+    width: 100%;
+    height: auto;
+}
+.overview-text p {
+    font-size: 13px;
+}
+
+/* 굿즈 슬라이드 */
+.center-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+.slider-track {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+.slide {
+    flex: 0 0 60%;
+    height: 350px;
+    opacity: 0.55;
+    transform: scale(0.85);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* 좌우 버튼 */
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.45);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+.slider-prev { left: 15px; }
+.slider-next { right: 15px; }
+@media (max-width: 768px) {
+    .slide {
+        flex-basis: 75%;
+        height: 250px;
+    }
+}
+
+/* 위치 */
+.location {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+.location p {
+    font-size: 11px;
+    text-align: center;
+}
 
 /* 푸터 */
 footer {

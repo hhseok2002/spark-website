@@ -6,7 +6,7 @@ html{
 }
 body {
     width: 100%;
-    min-width: 320px;
+    min-width: 300px;
 }
 /* 네비게이션 */
 header {

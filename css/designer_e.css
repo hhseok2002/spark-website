@@ -165,93 +165,46 @@ header {
     align-items: flex-start;
     padding: 20px;
 }
-.e-title-box {
+.sub-title {
+    color: #787878;
+    margin-bottom: -10px;
+}
+.e-title h1{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.name {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: flex-start;
     gap: 10px;
-    align-items: center;
-    margin-bottom: 10px;
 }
-.e-main-images {
-    flex: 1 1 0;
-    min-width: 0;
+.name h3 {
+    color: #4b4b4b;
+    font-size: 15px;
+}
+.name p {
+    font-size: 11px;
+    color: #787878;
+    padding-top: 3px;
+    margin-bottom: 18px;
+}
+.main-images{
     overflow: hidden;
-    background-color: #eee;
     border-radius: 12px;
+    background-color: #eee;
+    margin-bottom: 20px;
 }
-.e-main-images img {
+.main-images img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
-    transform: scale(1.08);
-    transition: transform 0.9s ease;
 }
-.e-information {
-    flex: 1 1 0;
-    min-width: 0;
-    margin-top: 20px;
-
-    height: auto;
-}
-.e-information h1 {
-    font-size: 25px;
-    position: relative;
-    padding-bottom: 12px;
-}
-.e-information h1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 3px;
-    background-color: #EB2254;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.6s 0.3s ease;
-}
-.e-information h1.show::after {
-    transform: scaleX(1);
-}
-.name-box {
-    width: 100%;
-    align-items: flex-start;
-    gap: 10px;
-    display: block;
-    margin-bottom: 20px;
-}
-.name-box h2 {
-    font-size: 20px;
-    font-weight: 550;
-}
-.name-box p{
-    font-size: 18px;
-}
-.text {
+.e-title p {
     font-size: 13px;
 }
-.e-main-images,
-.e-information h1,
-.name-box,
-.e-title .text {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    transition-delay: var(--delay, 0s);
-}
-.e-main-images.show,
-.e-information h1.show,
-.name-box.show,
-.e-title .text.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-.e-main-images.show img {
-    transform: scale(1);
-}
-
 
 .mockup-list {
     width: 100%;

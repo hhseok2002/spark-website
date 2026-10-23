@@ -55,7 +55,8 @@ const ADMIN_UIDS = [
     "qyKZU4UMXzOaGWDX3AAasZDOejX2",
     "FFpv7LW6mAUUzMWgtgL4yn4et1L2",
     "nSCnr37QXITekybnixYLWVcpLIu2",
-    "OpcTniweqbZ6eaXD1DPErBG4KcK2"
+    "OpcTniweqbZ6eaXD1DPErBG4KcK2",
+    "AhEOeXMvoVeTroYZiQmk7ADZcA63"
 ];
 
 const app = initializeApp(firebaseConfig);

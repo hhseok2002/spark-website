@@ -48,7 +48,14 @@ const firebaseConfig = {
 */
 const ADMIN_UIDS = [
     "3jpQX4wHk5eZxrRVc3rvctolqHo2",
-    "3Gcidpsv5uVJTWnRFEMmnk7WEbu2"
+    "3Gcidpsv5uVJTWnRFEMmnk7WEbu2",
+    "sVnIy3s8eOecSf1lbrhqyrNgPuw1",
+    "I35Ox3ExDShrs1fsDAzqjY9ib732",
+    "bv7XlGXs5bRsUEMFekLcYcldRQ63",
+    "qyKZU4UMXzOaGWDX3AAasZDOejX2",
+    "FFpv7LW6mAUUzMWgtgL4yn4et1L2",
+    "nSCnr37QXITekybnixYLWVcpLIu2",
+    "OpcTniweqbZ6eaXD1DPErBG4KcK2"
 ];
 
 const app = initializeApp(firebaseConfig);
